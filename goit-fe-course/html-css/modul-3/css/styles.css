@@ -112,4 +112,8 @@ nav > ul > li > a:focus{ color: #03a9f4;}
     background-color: #626262;
     color: white;
 }
+.button-more:active{
+    background-color: white;
+    color: #626262;
+}
 
