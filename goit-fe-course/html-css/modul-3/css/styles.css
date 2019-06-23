@@ -1,0 +1,115 @@
+/* *{outline:  1px solid red;} */
+/* @import url('https://fonts.googleapis.com/css?family=Aguafina+Script|Open+Sans|Playfair+Display|Playfair+Display+SC|Roboto&display=swap'); */
+html{
+    box-sizing: border-box;
+
+}
+*,*::before, 
+*,*::after{
+    box-sizing: inherit;
+}
+body{
+    margin: 0;
+    color: #626262;
+    font-family: 'Playfair Display', serif;
+}
+header {
+    margin-bottom: 26px;
+}
+.nav{
+    /* background-color: blueviolet; */
+    width: 900px;
+    margin: 0 auto;
+    padding: 78px 0 78px 0;
+    vertical-align: middle;
+    height: auto;
+}
+
+.site-nav{
+    vertical-align: middle;
+    width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.site-nav li:last-child{margin-right: 0px;}
+
+.menu-iteam{
+    display: inline-block;
+    margin-right: 120px;
+    
+}
+.menu-link
+{
+    display: inline-block;
+    width: 60px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 24px;
+    /* font-weight: bold; */
+    
+}
+
+/*---------------------------------------------------*/
+.container{
+    width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.section-wrap{
+    margin-bottom: 56px;
+}
+.style-list-content{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+.block-list-iteam{
+    width: 420px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    text-align: left;
+    line-height: 24px;
+}
+.block-list-iteam:not(:nth-child(2n)){margin-right: 60px;}
+
+/* wrapper */
+
+nav > ul > li > a{ color: gray;}
+nav > ul > li > a:hover{ color: #03a9f4;}
+nav > ul > li > a:active{ background-color: white; border: white;}
+nav > ul > li > a:visited{ background-color: white; border: white;} 
+nav > ul > li > a:focus{ color: #03a9f4;}
+
+.h3-page{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: Corbel;
+    color: #b4ad9e;
+}
+.h2-page{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.button-more{
+    border: none;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    line-height: 24px;
+    padding:  20px 39px 21px 36px;
+    background-color: white;
+    border: 1px solid #626262;
+    cursor: pointer;
+}
+.button-more:hover,:focus{
+    background-color: #626262;
+    color: white;
+}
+
