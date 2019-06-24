@@ -20,7 +20,7 @@ header {
     /* background-color: blueviolet; */
     width: 900px;
     margin: 0 auto;
-    padding: 78px 0 78px 0;
+    padding: 63px 0 63px 0;
     vertical-align: middle;
     height: auto;
 }
@@ -37,6 +37,7 @@ header {
 .menu-iteam{
     display: inline-block;
     margin-right: 120px;
+    padding: 15px 0 15px 0;
 }
 .menu-link
 {
