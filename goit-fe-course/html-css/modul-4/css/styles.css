@@ -90,6 +90,7 @@ h2::after{
     font-weight:normal;
     padding: 18px 0 18px 0;
     margin-bottom: 72px;
+    font-weight: bold;
 }
 /* ----------------font-family------------------- */
 @font-face{
