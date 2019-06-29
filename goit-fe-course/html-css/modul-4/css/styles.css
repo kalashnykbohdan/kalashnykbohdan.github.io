@@ -116,7 +116,6 @@ h2::after{
 .block-featprod{
     width: 255px;
     min-height: 322px;
-    background-color: #323232;
     margin-right: 30px;
     margin-bottom: 30px;
     float: left;
@@ -134,20 +133,22 @@ h2::after{
     background-color: #e9f0fd;
 }
 .block-featprod-second{
-    widows: 255px;
+    width: 255px;
     height: 40px;
     text-align: left;
+    
 }
 .name-product{
     float: left;
     width: 201px;
     min-height: 40px;
+    background-color: #323232;
 }
 .price-product{
     float: left;
-    background-color: rgba(140, 140, 140, 0.5);
     width: 54px;
     min-height: 40px;
+    background-color: #8c8c8c;
 }
 .text-product{
     color: white;
@@ -160,16 +161,13 @@ h2::after{
 .img-route{
     transform: rotate(45deg);
 }
-.block-featprod:hover{
-    background-color: #1abc9c;
-}
-/* 
-.block-featprod-second>.name-product:hover{
-    background-color: #1abc9c;
-}
-.block-featprod-second>.price-product:hover{
+
+.block-featprod:hover .price-product{
     background-color: #7fd9c7;
-} */
+} 
+.block-featprod:hover .name-product{
+    background-color: #1abc9c;
+} 
 /* ---------------------LATEST NEWS----------------- */
 .block-latestnews{
     width: 350px;
