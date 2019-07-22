@@ -1,0 +1,304 @@
+
+header{
+    display: flex;
+    height: 105px;
+    /* background-color: aquamarine; */
+}
+main{
+    /* background-color: aqua; */
+    text-align: center;
+}
+footer{
+    /* padding-top: 100px; */
+    width: 100%;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+}
+.html-width{
+    margin: 0 auto;
+    width: 1200px;
+}
+/* ----------------------------- */
+.menu{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu-ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    text-transform: uppercase;
+    width: 492px;
+    font-size: 14px;
+    font-family: 'Montserrat Regular', Courier, monospace;
+    font-weight: bold;
+}
+.menu-item-a{
+    color: #95e1d3;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+.menu-item-a:hover{
+    color: #f38181;
+    border-bottom: 3px solid #f38181;
+}
+/* .menu-item-a:hover:after{
+    display: block;
+    content: '';
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 50px;
+    height: 3px;
+    background-color: #f38181;
+} */
+
+.logotype{
+    display: flex;
+    width: 86px;
+    height: 22px;
+}
+.menu-item{
+    font-size: 14px;
+    font-family: 'Montserrat Regular', Courier, monospace;
+}
+/* ----------------------------- */
+/* ----------------------------- */
+.h3-title{
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+    font-family: 'KaushanScript Regular', Courier, monospace;
+    margin-bottom: 24px;
+}
+.h2-title{
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+    font-family: 'Montserrat Bold', Courier, monospace;
+    text-transform: uppercase;
+}
+.h2-title::after{
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin-top: 30px;
+}
+.text-title{
+    margin: 0 auto;
+    width: 944px;
+    margin-top: 44px;
+}
+.section-1{
+    width: 100%;
+}
+/* --------------------------- */
+
+/* ---- services list ---- */
+.services-list{
+    display: flex;
+    flex-wrap: wrap ;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.services-item{
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    width: 392px;
+    height: 176px;
+    margin-top: 64px;
+}
+
+/* ---- services item img ---- */
+.services-item-wrapper-img{
+    display: flex;
+    justify-content: center;
+    width: 92px;
+    height: 100%;
+}
+.img-services{
+    width: 40px;
+    height: 40px;
+}
+/* ---- services item info ---- */
+.services-item-wrapper-info{
+    width: 300px;
+    height: 100%;
+}
+.services-item-info-h{
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.section-1{
+    margin-top: 100px;
+}
+/* ---------==-----section-2--------------------- */
+.our-team{
+    width: 100%;
+}
+.our-team-ul{
+    margin-top: 60px;
+    width: 100%;
+    padding: 0;
+    text-transform: uppercase;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.our-team-iteam{
+    position: relative;
+    width: 380px;
+    height: 470px;
+}
+.our-team-iteam-wrapper{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: #95e1d3;
+}
+.our-team-iteam-wrapper-hover{
+    /* overflow: hidden; */
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    z-index: 9;
+    background-image: linear-gradient(#f38181,#fce38a);
+}
+.our-team-iteam-wrapper:hover .our-team-iteam-wrapper-hover{
+    display: block;
+    margin: -10px 0 0 -10px;
+}
+.our-team-iteam-wrapper:hover .our-team-img{
+    margin: -10px 0 0 -200px;
+}
+.our-team-img{
+    margin-left: -190px;/* Почему? Откуда отцтуп передтся */
+    position: absolute;
+    overflow: hidden;
+    z-index: 8;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.our-team-icon{
+    position: absolute;
+    transform: translate(70px,220px);
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    z-index: 10;
+}
+.our-team-icon-iteam-li{
+    margin-right: 1px;
+    width: 58px;
+    height: 58px;
+    background-color: #fce38a;
+    /* border: 1px solid #f38181; */
+}
+/* ------margin-right: 0px;-надо дописать----- */
+.our-team-icon-iteam-li:hover{
+    background-color: #95e1d3;
+}
+.our-team-icon-iteam{
+
+}
+.icon-social-img{
+    padding: 14px 20px 0 14px;
+}
+.info-employee{
+    margin-top: 500px;
+}
+.Name-employee{
+    font-family: 'Montserrat Regular';
+    text-transform: uppercase;
+    font: 14px;
+    color: #333333;
+}
+.Position-employee{
+    font-family: 'Roboto LightItalic';
+    text-transform: capitalize;
+    font: 15px;
+    color: #999999;
+    
+}
+.line-margin-top{
+    margin-top: 150px;
+    background-color: #999999;
+    border: 0;
+    height: 1px;
+}
+.footer-text-left{
+    font-family: 'Montserrat Regular';
+    color: #333333;
+    font-size: 14px;
+}
+.footer-text-left span{
+    color: #f38181;
+}
+.form-email{
+    height: 38px;
+}
+.form-email-text {
+    width: 220px;
+    height: 38px;
+    color: #999999;
+    padding: 0px;
+    font-family: 'Roboto LightItalic';
+    padding-left: 10px;
+}
+.form-email-button{
+    padding: 0px;
+    margin: 0px;
+    margin: 5px 0 0 -5px;
+    width: 150px;
+    height: 42px;
+    border: 0;
+    font-family: 'Montserrat Bold';
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+    background-color: #95e1d3;
+}
+/* ----------------font-family------------------- */
+@font-face{
+
+    font-family: 'KaushanScript Regular';
+    src: url("../fonts/KaushanScript-Regular.otf") format("opentype");
+    
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Montserrat Bold';
+    src: url("../fonts/Montserrat-Bold.otf") format("opentype");
+    
+    font-weight: normal;
+    font-style: normal;
+    }
+@font-face{
+    font-family: 'Montserrat Regular';
+    src: url("../fonts/Montserrat-Regular.otf") format("opentype");
+    
+    font-weight: normal;
+    font-style: normal;
+    }
+@font-face{
+    font-family: 'Roboto LightItalic';
+    src: url("../fonts/Roboto-LightItalic.ttf") format('truetype');
+    
+    font-weight: normal;
+    font-style: normal;
+    }
+/* --------------------------------------------- */
