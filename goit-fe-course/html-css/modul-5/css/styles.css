@@ -161,7 +161,7 @@ h2::after{
     height: 100%;
     width: 100%;
 }
-.slider-ctrl{
+/* .slider-ctrl{
     position: absolute;
     width: 104px;
     height: 104px;
@@ -170,13 +170,15 @@ h2::after{
     top: 50%;
     transform: translateY(-50%);
     background-color: #1abc9c;
-}
+}*/
 .slider-ctrl-prev{
     left: 0;
+    transform: translateY(225%);
 }
 .slider-ctrl-next{
     right: 0;
-}
+    transform: translateY(225%);
+} 
 .slider-paginarion{
     position: absolute;
     bottom: -40px;
@@ -356,3 +358,40 @@ h2::after{
     
     }
 /* --------------------------------------------- */
+.slider-button {
+    width: 104px;
+    height: 104px;
+    position: absolute;
+    background-color: #1abc9c;
+    opacity: 0.65;
+    border: none;
+    outline: none;
+    transition: opacity .4s ease;
+  }
+  .right-arrow::before,
+  .left-arrow::before {
+    content: "";
+    --s: 28px;
+    --bd: 4px solid #fff;
+    width: var(--s);
+    height: var(--s);
+    border-left:  var(--bd);
+    border-top:  var(--bd);
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  .right-arrow::before {
+     left: 45%;
+    transform: translate(-50%, -50%) rotate(135deg);
+  }
+  .left-arrow::before {
+     left: 55%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  .slider-button:hover,
+  .slider-button:focus {
+    background-color: #4ec6ab;
+    opacity: 1;
+    cursor: pointer;
+  }
