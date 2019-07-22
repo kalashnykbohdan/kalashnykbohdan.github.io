@@ -1,4 +1,10 @@
-
+html{
+    box-sizing: border-box;
+}
+*,*::before,
+*,*::after{
+    box-sizing: inherit;
+}
 header{
     display: flex;
     height: 105px;
@@ -183,7 +189,7 @@ footer{
     margin: -10px 0 0 -200px;
 }
 .our-team-img{
-    margin-left: -190px;/* Почему? Откуда отцтуп передтся */
+    margin-left: -190px;/* Почему? Откуда отцтуп берется */
     position: absolute;
     overflow: hidden;
     z-index: 8;
