@@ -60,16 +60,17 @@
                 <div class="wrapper-section-2">
                     <h2 class="h2-text h2-text-contact-us">Contact us</h2>
                     <p class="p-text">Proin iaculis purus consequat sem cure.</p>
-                    <form class="form-contact-us">
+
+                    <form class="form-contact-us" action="#" method="POST">
                         <div class="wrapper-form">
                             <div class="wrapper-input-text-small">
-                                <input type="text" class="input-text-small" placeholder="your Name *">
-                                <input type="text" class="input-text-small" placeholder="your e-mail *">
-                                <input type="text" class="input-text-small" placeholder="subject">
+                                <input type="text" class="input-text-small" required placeholder="your Name *" name="Name" autofocus>
+                                <input type="email" class="input-text-small" required placeholder="your e-mail *" name="e-mail">
+                                <input type="text" class="input-text-small" placeholder="subject" name="subject">
                             </div>
-                            <textarea class="input-text-big" placeholder="Your message *"></textarea>
+                            <textarea class="input-text-big" required placeholder="Your message *" name="message"></textarea>
                         </div>
-                        <input type="submit" class="button-form" value="Send Message">
+                        <button type="submit" class="button-form">Send Message</button>
                     </form>
                 </div>
                 
