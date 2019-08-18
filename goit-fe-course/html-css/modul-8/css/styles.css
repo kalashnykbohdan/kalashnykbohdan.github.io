@@ -28,7 +28,7 @@ body{
     min-height: 480px;
     background-image: 
       linear-gradient(to bottom, hsla(0,0%,0%,.2), hsla(0,0%,0%,.3)),
-      url(https://i.ibb.co/yssjXcB/bg-mobile.png);
+      url(../img/background-img-mobile.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -243,7 +243,7 @@ nav{
         /* min-height: 542px; */
         background-image: 
           linear-gradient(to bottom, hsla(0,0%,0%,.2), hsla(0,0%,0%,.3)),
-          url(https://i.ibb.co/5RcYHsY/bg-tablet.png);
+          url(../img/background-img-tablet.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -350,7 +350,7 @@ nav{
         min-height: 768px;
         background-image: 
           linear-gradient(to bottom, hsla(0,0%,0%,.2), hsla(0,0%,0%,.3)),
-          url(https://i.ibb.co/KqQQbBf/bg-desktop.png);
+          url(../img/background-img-desktop.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
