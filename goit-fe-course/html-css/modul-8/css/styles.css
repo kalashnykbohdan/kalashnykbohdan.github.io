@@ -16,6 +16,7 @@ body{
     min-width: 320px;
     height: auto;
     margin: 0 auto;
+    
     /* background-color: #4e73db; */
 }
 /* --------------------header------------------- */
@@ -32,6 +33,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    
 }
 .wrapper-nav{
     position: absolute;
@@ -247,6 +249,7 @@ nav{
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        
     }
 
     /* ---------------------------------------------- */
@@ -338,9 +341,9 @@ nav{
 }
 /* ---------------------------------@media screen and (min-width: 1000px)--------------------------------- */
 /* ------------------------------------------------------------------------------------------------------ */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 980px) {
     .wrapper{
-        min-width: 1000px;
+        min-width: 940px;
         height: 700px;
     }
     .header{
