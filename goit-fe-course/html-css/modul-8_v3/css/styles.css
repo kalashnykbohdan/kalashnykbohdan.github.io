@@ -26,8 +26,6 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
-    background-color: #ff4e50;
     
 }
 .wrapper{
@@ -235,11 +233,16 @@ body{
 
 @media screen and (min-width: 480px) {
 
+    html{
+        box-sizing: border-box;
+        background-color: #ee7241;
+    }
     body{
         padding: 0;
         margin: 0 auto;
         min-width: 480px;
         max-width: 1000px;
+        
     }
     .header{
         margin: 0 auto;
@@ -253,8 +256,7 @@ body{
           background-repeat: no-repeat;
           background-size: cover;
           background-position: center;
-      
-          background-color: #ff4e50;
+
           
       }
     .wrapper{
@@ -352,16 +354,21 @@ body{
 /* ---------------------------------@media screen and (min-width: 1000px)--------------------------------- */
 /* ------------------------------------------------------------------------------------------------------ */
 @media screen and (min-width: 1000px) {
-
+    html{
+        box-sizing: border-box;
+        background-color: #ff3eff;
+    }
     body{
         padding: 0;
         margin: 0 auto;
-        max-width: 1500px;
+        min-width: 1000px;
+        
     }
     .header{
         margin: 0 auto;
         position: relative;
-        width: 100%;
+        min-width: 1000px;
+        max-width: 1500px;
     
         background-image: 
           linear-gradient(to bottom, hsla(0,0%,0%,.2), hsla(0,0%,0%,.3)),
@@ -369,8 +376,6 @@ body{
           background-repeat: no-repeat;
           background-size: cover;
           background-position: center;
-      
-          background-color: #ff4e50;
           
       }
     .wrapper{
