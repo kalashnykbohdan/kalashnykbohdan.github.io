@@ -235,30 +235,37 @@ body{
 
 @media screen and (min-width: 480px) {
 
-    .wrapper{
+    body{
+        padding: 0;
+        margin: 0 auto;
         min-width: 480px;
         max-width: 1000px;
-        height: auto;
-        margin: 0 auto;
     }
-
     .header{
+        margin: 0 auto;
         position: relative;
-        margin: 0;
-        padding: 0;
         min-width: 480px;
         max-width: 1000px;
     
         background-image: 
           linear-gradient(to bottom, hsla(0,0%,0%,.2), hsla(0,0%,0%,.3)),
           url(../img/background-img-tablet.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+      
+          background-color: #ff4e50;
+          
+      }
+    .wrapper{
+        /* min-width: 480px;
+        max-width: 1000px; */
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
     }
 
- 
+
     .logo{
         margin: 0;
         padding: 0;
@@ -344,6 +351,35 @@ body{
 }
 /* ---------------------------------@media screen and (min-width: 1000px)--------------------------------- */
 /* ------------------------------------------------------------------------------------------------------ */
+@media screen and (min-width: 1000px) {
+
+    body{
+        padding: 0;
+        margin: 0 auto;
+        max-width: 1500px;
+    }
+    .header{
+        margin: 0 auto;
+        position: relative;
+        width: 100%;
+    
+        background-image: 
+          linear-gradient(to bottom, hsla(0,0%,0%,.2), hsla(0,0%,0%,.3)),
+          url(../img/background-img-desktop.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+      
+          background-color: #ff4e50;
+          
+      }
+    .wrapper{
+        /* min-width: 480px;
+        max-width: 1000px; */
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
 /* @media screen and (min-width: 980px) {
     .wrapper{
         min-width: 940px;
