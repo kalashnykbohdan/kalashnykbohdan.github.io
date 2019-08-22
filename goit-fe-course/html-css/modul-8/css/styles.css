@@ -216,12 +216,12 @@ body{
 
     body{
         min-width: 480px;
-        max-width: 1000px;
+        max-width: 1080px;
         
     }
     .header{
         min-width: 480px;
-        max-width: 1000px;
+        max-width: 1080px;
         height: 700px;
         background-image: 
           linear-gradient(to bottom, hsla(0,0%,0%,.2), hsla(0,0%,0%,.3)),
@@ -232,7 +232,7 @@ body{
 
     .main{
         min-width: 480px;
-        max-width: 1000px;
+        max-width: 1080px;
     }
     .wrapper{
         width: 100%;
@@ -304,7 +304,7 @@ body{
 }
 /* ---------------------------------@media screen and (min-width: 1000px)--------------------------------- */
 /* ------------------------------------------------------------------------------------------------------ */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1080px) {
 
     body{
         min-width: 1000px;
