@@ -97,8 +97,7 @@ html {
   }
   .menu{
     display: flex;
-    justify-content: space-between;
-    /* background-color: aquamarine; */
+    justify-content: flex-end;
   }
 }
 
@@ -124,8 +123,7 @@ html {
   }
   .menu{
     display: flex;
-    justify-content: space-between;
-    /* background-color: aquamarine; */
+    justify-content: flex-end;
   }
 }
 
