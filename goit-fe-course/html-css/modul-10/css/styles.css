@@ -359,6 +359,7 @@ display: block;
 .socials__item:hover .socials__icon {
   fill: white;
 } 
+
 /*-----------------------------------------------------*/
 /*-----------------------------------------------------*/
 .line-margin-top{
@@ -474,13 +475,22 @@ display: block;
   bottom: 10px;
   right: 10px;
 }
-.wrapper-employee:hover .socials-grid {
+.wrapper-employee:hover .socials-gradient {
   top: -10px;
   left: -10px;
-  opacity: 0.9;
+  /* opacity: 0.9; */
+}
+.wrapper-employee:hover .socials {
+  margin-top: -20px;
+  margin-left: -20px;
+  opacity: 1;
+  -webkit-transition: var(--trans);
+  -o-transition: var(--trans);
+  transition: var(--trans);
 }
 
-.socials-grid {
+
+.socials-gradient {
   position: absolute;
   height: 470px;
   width: 100%;
@@ -504,7 +514,25 @@ display: block;
       -ms-flex-pack: center;
           justify-content: center;
 }
+.socials {
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  position:absolute;
+width: 240px;
+Left: 20%;
+Right: 50%;
+top: 40%;
+bottom: 50%;
+Transform: translate (-50%, -50%);
+
+opacity: 0;
+
+}
 .social__link {
+  /* position: absolute; */
   width: 57px;
   height: 57px;
   background: #fce38a;
@@ -524,6 +552,9 @@ display: block;
 }
 .social__link:hover .socials__icon{
   fill: #ffffff;
+}
+.wrapper-employee:hover .socials-gradient{
+  opacity: 0.9;
 }
 /* ------------------------------------------ */
 
