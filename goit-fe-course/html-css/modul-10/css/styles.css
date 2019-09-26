@@ -451,7 +451,7 @@ display: block;
   height: 470px;
   max-width: 380px;
   background-color: #95e1d3;
-  margin: 0px 0px 0px 5px;
+  /* margin: 0px 0px 0px 5px; */
   
 }
 .employee-img {
