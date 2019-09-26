@@ -1,0 +1,75 @@
+.page-header__title {
+    font-size: 72px;
+    color: white;
+    margin-top: 164px;
+    text-transform: capitalize;
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    text-align: center;
+    max-width: 100%;
+    }
+    
+    .page-header__subtitle {
+    font-size: 150px;
+    color: white;
+    margin-top: 47px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 140px;
+    max-width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0;
+    }
+    
+    .page-header__btn {
+    min-width: 154px;
+    height: 35px;
+    background: transparent;
+    font-size: 14px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 3px solid white;
+    margin: auto;
+    }
+    .wrapper-page-header__btn{
+    width: 13%;
+    margin: auto;
+    }
+    
+    .page-header__btn:hover {
+    background: #fce38a;
+    }
+    .title-center{
+        text-align: center;
+        }
+        .h3-title{
+          padding: 0;
+          margin: 0;
+          font-size: 24px;
+          font-family: 'KaushanScript Regular', Courier, monospace;
+          margin-bottom: 24px;
+        }
+        .h2-title{
+          padding: 0;
+          margin: 0;
+          font-size: 30px;
+          font-family: 'Montserrat Bold', Courier, monospace;
+          text-transform: uppercase;
+        }
+        .h2-title::after{
+          content: '';
+          display: block;
+          margin: 0 auto;
+          width: 60px;
+          height: 3px;
+          background-color: #f38181;
+          margin-top: 30px;
+        }
+        .text-title{
+          margin: 0 auto;
+          width: 944px;
+          margin-top: 44px;
+        }
