@@ -4,10 +4,13 @@
 @import 'normalize';
 @import 'helpers/variables.scss';
 @import 'base';
+
 @import 'component/menu';
-@import 'component/services';
-@import 'component/font-face';
-@import 'component/employee';
 @import 'component/banner';
 @import 'component/title';
+@import 'component/services';
+
+
+// @import 'component/font-face';
+@import 'component/employee';
 @import 'component/form-email';

@@ -1,56 +1,62 @@
+
+/* 2. Хеддер */
+/* Задаем фон картинки и градиент */
 .banner {
-    
-    height: 1000px;
+
+  height: 1000px;
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        from(rgba(252, 227, 138, 0.9)),
+        to(rgba(243, 129, 129, 0.9))
+      ),
+      url("../img/Font.png");
+    background-image: -o-linear-gradient(
+        bottom,
+        rgba(252, 227, 138, 0.9),
+        rgba(243, 129, 129, 0.9)
+      ),
+      url("../img/Font.png");
+    background-image: linear-gradient(
+        to top,
+        rgba(252, 227, 138, 0.9),
+        rgba(243, 129, 129, 0.9)
+      ),
+      url("../img/Font.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: -150px;
+    margin: 0 auto;
+  }
+  
+  /* Задаем фон картинки и градиент при retina */
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min-resolution: 1.5dppx) {
+    .banner {
       background-image: -webkit-gradient(
           linear,
           left bottom,
           left top,
           from(rgba(252, 227, 138, 0.9)),
-    to(rgba(243, 129, 129, 0.9))
+          to(rgba(243, 129, 129, 0.9))
         ),
-        url("../img/Font.png");
+        url("../img/Font@2x.png");
       background-image: -o-linear-gradient(
           bottom,
-          from(rgba(252, 227, 138, 0.9)),
-    to(rgba(243, 129, 129, 0.9))
+          rgba(252, 227, 138, 0.9),
+          rgba(243, 129, 129, 0.9)
         ),
-        url("../img/Font.png");
+        url("../img/Font@2x.png");
       background-image: linear-gradient(
           to top,
-          from(rgba(252, 227, 138, 0.9)),
-    to(rgba(243, 129, 129, 0.9))
+          rgba(252, 227, 138, 0.9),
+          rgba(243, 129, 129, 0.9)
         ),
-        url("../img/Font.png");
-      background-size: cover;
-      background-repeat: no-repeat;
-      margin-left: -150px;
-      margin: 0 auto;
+        url("../img/Font@2x.png");
     }
-    
-    /* Задаем фон картинки и градиент при retina */
-    @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-      only screen and (-o-min-device-pixel-ratio: 3/2),
-      only screen and (min-resolution: 1.5dppx) {
-      .banner {
-        background-image: -webkit-gradient(
-            linear,
-            left bottom,
-            left top,
-            from(rgba(252, 227, 138, 0.9)),
-    to(rgba(243, 129, 129, 0.9))
-          ),
-          url("../img/Font@2x.png");
-        background-image: -o-linear-gradient(
-            bottom,
-            from(rgba(252, 227, 138, 0.9)),
-    to(rgba(243, 129, 129, 0.9))
-          ),
-          url("../img/Font@2x.png");
-        background-image: linear-gradient(
-            to top,
-            from(rgba(252, 227, 138, 0.9)),
-    to(rgba(243, 129, 129, 0.9))
-          ),
-          url("../img/Font@2x.png");
-      }
-    }
+  }
+
+
+  
