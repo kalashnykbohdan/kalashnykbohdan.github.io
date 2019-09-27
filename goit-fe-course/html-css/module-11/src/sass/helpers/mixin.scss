@@ -1,0 +1,6 @@
+@mixin style_text ($size, $family, $transform, $color){
+    font-size: $size;
+    font-family: $family; 
+    text-transform: $transform;
+    color: $color;
+}

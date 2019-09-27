@@ -1,0 +1,17 @@
+.form-email__text {
+    width: 220px;
+    height: 38px;
+    @include style_text(none, $font-family-second, none, $color-text);
+    padding: 0px;
+    padding-left: 10px;
+}
+.form-email__button{
+    padding: 0px;
+    margin: 0px;
+    margin: 5px 0 0 -5px;
+    width: 150px;
+    height: 42px;
+    border: 0;
+    background-color: $color-email-button;
+    @include style_text(14px, $font-family-first, uppercase, $text-color-email-button);
+}

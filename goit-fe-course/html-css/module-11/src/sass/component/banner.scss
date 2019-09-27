@@ -1,0 +1,62 @@
+
+/* 2. Хеддер */
+/* Задаем фон картинки и градиент */
+.banner {
+
+  height: 1000px;
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        from($banner-linear-gradient-color1),
+        to($banner-linear-gradient-color2)
+      ),
+      url("../img/Font.png");
+    background-image: -o-linear-gradient(
+        bottom,
+        $banner-linear-gradient-color1,
+        $banner-linear-gradient-color2
+      ),
+      url("../img/Font.png");
+    background-image: linear-gradient(
+        to top,
+        $banner-linear-gradient-color1,
+        $banner-linear-gradient-color2
+      ),
+      url("../img/Font.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: -150px;
+    margin: 0 auto;
+  }
+  
+  /* Задаем фон картинки и градиент при retina */
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min-resolution: 1.5dppx) {
+    .banner {
+      background-image: -webkit-gradient(
+          linear,
+          left bottom,
+          left top,
+          from($banner-linear-gradient-color1),
+          to($banner-linear-gradient-color2)
+        ),
+        url("../img/Font@2x.png");
+      background-image: -o-linear-gradient(
+          bottom,
+          $banner-linear-gradient-color1,
+          $banner-linear-gradient-color2
+        ),
+        url("../img/Font@2x.png");
+      background-image: linear-gradient(
+          to top,
+          $banner-linear-gradient-color1,
+          $banner-linear-gradient-color2
+        ),
+        url("../img/Font@2x.png");
+    }
+  }
+
+
+  

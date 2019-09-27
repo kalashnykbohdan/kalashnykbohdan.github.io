@@ -1,0 +1,145 @@
+.wrapper-employee {
+    width:380px;
+    position: relative;
+    &:hover .employee-img {
+      bottom: 10px;
+      right: 10px;
+    }
+    &:hover .socials-gradient {
+      top: -10px;
+      left: -10px;
+      /* opacity: 0.9; */
+    }
+    &:hover .socials {
+      margin-top: -20px;
+      margin-left: -20px;
+      opacity: 1;
+      -webkit-transition: var(--trans);
+      -o-transition: var(--trans);
+      transition: var(--trans);
+    }
+    
+  }
+
+  .our-team{
+    margin-top: 60px;
+    width: 100%;
+    padding: 0;
+    text-transform: uppercase;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  
+  .employee_name{
+    @include style_text(14px, $font-family-first, uppercase, none);
+    // font-family: $font-family-first;
+    // text-transform: uppercase;
+    // font: 14px;
+  }
+  .employee_position{
+    @include style_text(15px, $font-family-second, capitalize, $color-text);
+    
+  }
+  .employee {
+    height: 470px;
+    max-width: 380px;
+    background-color: $eployee-wrapper-color;
+    
+  }
+  .employee-img {
+    cursor: pointer;
+    bottom: 0;
+    right: 0;
+    -webkit-transition: var(--trans);
+    -o-transition: var(--trans);
+    transition: var(--trans);
+    position: relative;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 25%;
+       object-position: 25%;
+  }
+  .employee-img-position{
+      -o-object-position: 50%;
+         object-position: 50%;
+  }
+
+  
+  .socials-gradient {
+    position: absolute;
+    height: 470px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    -webkit-transition: var(--trans);
+    -o-transition: var(--trans);
+    transition: var(--trans);
+    background: -webkit-gradient(linear, left top, left bottom, from($eployee-linear-gradient-color1), to($eployee-linear-gradient-color2));
+    background: -o-linear-gradient($eployee-linear-gradient-color1, $eployee-linear-gradient-color2);
+    background: linear-gradient($eployee-linear-gradient-color1, $eployee-linear-gradient-color2);
+    opacity: 0;
+    text-align: center;
+    padding-top: 206px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .socials {
+  
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    position:absolute;
+  width: 240px;
+  Left: 20%;
+  Right: 50%;
+  top: 40%;
+  bottom: 50%;
+  Transform: translate (-50%, -50%);
+  
+  opacity: 0;
+  
+  }
+  .social__link {
+    /* position: absolute; */
+    width: 57px;
+    height: 57px;
+    background: $social_link;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 1px;
+    &:hover{
+      background: $social_link_hover;
+    }
+  }
+
+  .social__link:hover .socials__icon{
+    fill: #ffffff;
+  }
+  .wrapper-employee:hover .socials-gradient{
+    opacity: 0.9;
+  }
+  
+  .socials__icon {
+    margin: auto;
+    width: 32px;
+    height: 32px;
+    fill: $social_link_hover;
+  }
+  
+  .socials__item:hover .socials__icon {
+    fill: white;
+  } 
+  
