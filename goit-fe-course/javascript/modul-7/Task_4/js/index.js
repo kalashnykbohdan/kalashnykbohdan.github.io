@@ -8,7 +8,7 @@ const decrementButton = document.querySelector('button[data-action="decrement"]'
 decrementButton.addEventListener('click', decrement)
 
 function increment(){
-  counterValue--;
+  counterValue++;
   // console.log(counterValue);
   saveInSpan();
 }
