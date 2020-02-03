@@ -47,5 +47,8 @@ function openImage(e){
 function closeImage(e){
         e.preventDefault();
         openImageBtn.classList.remove('is-open')
+        const lightboxImag = document.querySelector('.lightbox__imag');
+        lightboxImag.src = 'unknown';
+        lightboxImag.alt = '';
 }
 
