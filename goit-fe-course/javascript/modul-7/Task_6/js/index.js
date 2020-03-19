@@ -11,6 +11,7 @@ input.addEventListener('change', event => {
   }
   else{
     input.classList.add('invalid');
+    input.classList.remove('valid')
   }
   // console.log(event.currentTarget.value);
 })

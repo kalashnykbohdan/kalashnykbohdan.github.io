@@ -7,19 +7,18 @@ incrementButton.addEventListener('click', increment)
 const decrementButton = document.querySelector('button[data-action="decrement"]')
 decrementButton.addEventListener('click', decrement)
 
+const value = document.querySelector('#value');
+
 function increment(){
   counterValue++;
   // console.log(counterValue);
-  saveInSpan();
+  value.textContent = counterValue; 
 }
 
 function decrement (){
   counterValue--;
   // console.log(counterValue);
-  saveInSpan();
+  value.textContent = counterValue; 
 }
 
-function saveInSpan(){
-  const spanTeg = document.querySelector('#value');
-  spanTeg.textContent = counterValue; 
-}
+
