@@ -3,7 +3,8 @@
 const images = [
     {
       url:
-        'https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+        // 'https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+        'https://m.nkj.ru/upload/iblock/586/5869ae125599f498bfdc2808f206fcb2.jpg',
       alt: 'White and Black Long Fur Cat',
     },
     {
