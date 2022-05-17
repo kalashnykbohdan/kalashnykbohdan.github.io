@@ -17,16 +17,16 @@
 @font-face {
   font-family: Outfit;
   font-display: swap;
-  src: url("../fonts/Outfit-ExtraLight.woff2") format("woff2");
-  font-weight: 200;
+  src: url("../fonts/Outfit-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
   font-family: Outfit;
   font-display: swap;
-  src: url("../fonts/Outfit-ExtraBold.woff2") format("woff2");
-  font-weight: 800;
+  src: url("../fonts/Outfit-Light.woff2") format("woff2");
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -43,6 +43,14 @@
   font-display: swap;
   src: url("../fonts/Outfit-Regular.woff2") format("woff2");
   font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Outfit;
+  font-display: swap;
+  src: url("../fonts/Outfit-ExtraLight.woff2") format("woff2");
+  font-weight: 200;
   font-style: normal;
 }
 
@@ -79,14 +87,6 @@
 }
 
 @font-face {
-  font-family: Outfit;
-  font-display: swap;
-  src: url("../fonts/Outfit-Light.woff2") format("woff2");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
   font-family: PlayfairDisplay;
   font-display: swap;
   src: url("../fonts/PlayfairDisplay-Bold.woff2") format("woff2");
@@ -99,6 +99,14 @@
   font-display: swap;
   src: url("../fonts/PlayfairDisplay-BoldItalic.woff2") format("woff2");
   font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: PlayfairDisplay;
+  font-display: swap;
+  src: url("../fonts/PlayfairDisplay-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
   font-style: normal;
 }
 
@@ -121,8 +129,8 @@
 @font-face {
   font-family: PlayfairDisplay;
   font-display: swap;
-  src: url("../fonts/PlayfairDisplay-ExtraBold.woff2") format("woff2");
-  font-weight: 800;
+  src: url("../fonts/PlayfairDisplay-Medium.woff2") format("woff2");
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -155,14 +163,6 @@
   font-display: swap;
   src: url("../fonts/PlayfairDisplay-SemiBoldItalic.woff2") format("woff2");
   font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: PlayfairDisplay;
-  font-display: swap;
-  src: url("../fonts/PlayfairDisplay-Medium.woff2") format("woff2");
-  font-weight: 500;
   font-style: normal;
 }
 
@@ -639,8 +639,46 @@ section {
   height: auto;
 }
 
-.h1__content {
+p {
+  font-family: "Outfit";
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Playfair Display";
+}
+
+.h1 {
+  font-style: normal;
+  letter-spacing: -2.5%;
+}
+
+.title__particle {
+  font-weight: 600;
+  font-size: 14px;
+  color: #996830;
+  margin-left: 80px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.title__particle::before {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 1px;
+  background-color: #996830;
+  position: absolute;
+  top: calc(50% - 1px);
+  left: -80px;
+}
+
+.title__text {
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -648,39 +686,21 @@ section {
   color: #2C2C2C;
 }
 
+.h1__content {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 48px;
+  color: #2C2C2C;
+}
+
+.section__padding {
+  padding: 48px 0;
+}
+
 .container {
   margin: 0 auto;
   padding: 20px;
-}
-
-.paragraf {
-  margin-top: 48px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.paragraf > span {
-  display: block;
-  margin-right: 16px;
-  width: 64px;
-  height: 1px;
-  background-color: #996830;
-}
-
-.paragraf > h3 {
-  font-family: "Outfit";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 20px;
-  color: #996830;
 }
 
 .line {
@@ -745,7 +765,6 @@ header {
 }
 
 .content > h1 {
-  font-family: PlayfairDisplay;
   font-size: 48px;
   font-weight: 500;
   line-height: 60px;
@@ -763,21 +782,21 @@ header {
   line-height: 32px;
 }
 
-.no-webp .big_img {
+.no-webp .cover {
   background: url("../img/background_page_home.jpg"); }
 
-.big_img {
+.cover {
   width: 100%;
   height: 640px;
   background-position: center;
   background-size: cover;
 }
 
-.big_img > div {
+.cover > div {
   position: relative;
 }
 
-.big_img > div > button {
+.cover__bth {
   position: absolute;
   top: -60px;
   left: calc(50% - 60px);
@@ -785,7 +804,7 @@ header {
   z-index: 20;
 }
 
-.big_img > div > button > img {
+.cover__img {
   width: 120px;
   height: 120px;
 }
@@ -811,8 +830,7 @@ header {
   width: 335px;
 }
 
-.awards__h2 {
-  font-family: "Playfair Display";
+.awards__title {
   font-style: italic;
   font-weight: 400;
   font-size: 24px;
@@ -864,46 +882,12 @@ header {
 .awards__text {
   color: #D9D9D6;
   padding: 12px;
-  font-family: "Outfit";
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
 }
 
-.about__paragraf {
-  margin-top: 48px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 159px;
-  height: auto;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.about__paragraf > span {
-  display: block;
-  width: 64px;
-  height: 1px;
-  background-color: #996830;
-}
-
-.about__paragraf > h3 {
-  font-family: "Outfit";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 20px;
-  color: #996830;
-}
-
 .about__text_blk > p {
-  font-family: "Outfit";
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -961,7 +945,6 @@ header {
 }
 
 .metrics__number {
-  font-family: "Playfair Display";
   font-style: normal;
   font-weight: 400;
   font-size: 48px;
@@ -971,20 +954,11 @@ header {
 
 .metrics__text {
   margin: 5px 16px;
-  font-family: "Outfit";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: #2C2C2C;
-}
-
-.metrics > span {
-  margin-top: 30px;
-  display: block;
-  width: 100%;
-  height: 1px;
-  background-color: #D9D9D6;
 }
 
 .services__list {
@@ -1010,7 +984,6 @@ header {
 }
 
 .services__title {
-  font-family: "Playfair Display";
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
@@ -1020,7 +993,6 @@ header {
 
 .services__text {
   margin-top: 16px;
-  font-family: "Outfit";
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
@@ -1045,7 +1017,6 @@ header {
 
 .interer__title {
   margin-top: 16px;
-  font-family: "Playfair Display";
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
@@ -1056,7 +1027,6 @@ header {
 .interer__text {
   margin-top: 16px;
   margin-bottom: 80px;
-  font-family: "Outfit";
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
@@ -1101,7 +1071,6 @@ header {
 
 .link_send {
   color: #996830;
-  font-family: "Playfair Display";
   font-style: italic;
   font-weight: 400;
   font-size: 30px;
@@ -1120,7 +1089,6 @@ header {
 }
 
 .contact__title {
-  font-family: "Playfair Display";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -1129,7 +1097,6 @@ header {
 }
 
 .contact__text {
-  font-family: "Outfit";
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -1141,7 +1108,6 @@ header {
 }
 
 .contact__info {
-  font-family: "Playfair Display";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -1150,7 +1116,6 @@ header {
 }
 
 .signature {
-  font-family: "Outfit";
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -1180,7 +1145,6 @@ header {
 }
 
 .connect__title > h3 {
-  font-family: "Outfit";
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -1219,15 +1183,35 @@ header {
 }
 
 @media screen and (min-width: 768px) {
+  .title__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 96px;
+    color: #2C2C2C;
+  }
+
   .container {
     padding: 20px 40px;
     width: 768px;
   }
 
+  .h1__main {
+    font-size: 72px;
+    font-weight: 500;
+    line-height: 96px;
+  }
+
   .h1__content {
     font-size: 60px;
+    font-weight: 400;
     line-height: 72px;
-    letter-spacing: -2.5%;
+  }
+
+  .title__text {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 72px;
   }
 
   .menu__list {
@@ -1275,16 +1259,6 @@ header {
     width: 552px;
   }
 
-  .about__paragraf {
-    margin-top: 96px;
-  }
-
-  .about__text_blk > h1 {
-    font-size: 60px;
-    line-height: 72px;
-    letter-spacing: -2.5%;
-  }
-
   .about__text_blk > p {
     font-size: 18px;
     line-height: 32px;
@@ -1330,7 +1304,6 @@ header {
   }
 
   .metrics__number {
-    font-family: "Playfair Display";
     font-style: normal;
     font-weight: 400;
     font-size: 60px;
@@ -1339,7 +1312,6 @@ header {
   }
 
   .metrics__text {
-    font-family: "Outfit";
     font-style: normal;
     font-weight: 400;
     margin: 0px;
@@ -1419,12 +1391,24 @@ header {
     width: 280px;
   }
 
-  .big_img > div > button {
+  .cover__bth {
     left: 120px;
   }
 
-  .awards__list {
+  .awards .awards__list {
     width: 1060px;
+  }
+
+  .flex-position-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .about__text_blk {
@@ -1536,4 +1520,4 @@ header {
   }
 }
 
-.webp .big_img { background: url(../img/background_page_home.webp); }
+.webp .cover { background: url(../img/background_page_home.webp); }
